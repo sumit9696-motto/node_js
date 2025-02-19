@@ -1,0 +1,67 @@
+.user-table{
+    margin-top: 20px;
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+.deletbtn{
+    background-color: #b90000;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+    
+}
+.editbtn{
+    background-color: #008CBA;
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: #000;
+    text-decoration-style: none;
+    color: white;
+    border-radius: 5px;
+    
+}
+.deletbtn:hover{
+    background-color: #ed690a;
+}
+.editbtn:hover{
+    background-color: #a76400;
+}
+thead{
+    background-color: #4CAF50;
+    color: white;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+}
+.adduserbtn{
+    text-decoration-style: none;
+    color: white;
+    background-color: #af4c90;
+    padding: 10px 15px;
+    margin-bottom: 50px;
+    /* margin-top: 20px; */
+    /* margin-left: 0; */
+
+    border-radius: 5px;
+
+}
+td{
+    padding: 10px;
+    text-align: center;
+}
+th{
+    padding: 10px;
+    text-align: center;
+
+}
+Link {
+    text-decoration-style: none;
+    color: white;
+}
+

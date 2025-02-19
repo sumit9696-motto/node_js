@@ -1,0 +1,22 @@
+REST API
+GET/users= html document render DONE
+GET/api/users -list all users Json -DONE
+GET/USERS -LIST ALL USER DONE
+
+GET/api/USER/1 - GET THE USER WITH ID 1 DONE
+GET/api/USER/2 - GET THE USER WITH ID 2 DONE 
+
+
+Dynamic path parameters
+GET/api/users/:id
+
+
+
+POST /api/USER - CREATE NEW USER
+
+PATCH /api/USERS/1 -EDIT THE USER WITH ID 1
+
+DELETE /api/USERS/1 DELETE THE USER WITH ID 1
+
+
+FOR DATA U\USE MOCOKAROO.COM
