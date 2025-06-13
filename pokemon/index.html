@@ -26,6 +26,7 @@
   </style>
     </head>
     <body>
+        <button onclick="openURL()">Github</button>
         <h1>Enter any value for Pokemon finder Image</h1>
         <input type="number" id="inputfild"/>
          <button onclick="getpokimon()"> Get Image</button>
@@ -35,6 +36,9 @@
 
 
         <script>
+             function openURL() {
+      window.open("https://github.com/sumit9696-motto", "_blank"); // Opens in a new tab
+    }
 
             function getpokimon(){
                 const id=document.getElementById('inputfild').value;
