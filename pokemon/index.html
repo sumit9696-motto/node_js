@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <title>Pokemon</title>
+  <style>
+     body {
+      text-align: center;
+      font-family: Arial;
+      padding: 50px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    img {
+      margin-top: 20px;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+    </head>
+    <body>
+        <h1>Enter any value for Pokemon finder Image</h1>
+        <input type="number" id="inputfild"/>
+         <button onclick="getpokimon()"> Get Image</button>
+
+        <div id="pokemonimg"></div>
+
+
+
+        <script>
+
+            function getpokimon(){
+                const id=document.getElementById('inputfild').value;
+                const url =`https://pokeapi.co/api/v2/pokemon/${id}`;
+                fetch(url).then(res=>{
+                    if(!res)throw new Error("not found");
+                    return res.json();
+                })
+                .then(result=>{
+                    const imgUrl = result.sprites.front_default;
+                    const name = result.name;
+ document.getElementById("pokemonimg").innerHTML = `
+            <h2>#${id} - ${name.charAt(0).toUpperCase() + name.slice(1)}</h2>
+            <img src="${imgUrl}" alt="${name}" />
+          `;
+
+                })
+                .catch(err=>{
+                    
+          document.getElementById("pokemonimg").innerHTML = `<p style="color:red;">${error.message}</p>`;
+        
+                });
+
+            }
+        </script>
+
+    </body>
+</html>
