@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;
+text-align: center;
+}
+h1   {color: blue;}
+p    {color: red;}
+button {
+
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 20px;
+      
+      cursor: pointer;
+      
+      color: white;
+      border: none;
+      
+}
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+    color:black;
+}#pink{
+    background-color: pink;
+    color: black;
+}
+#powderblue{
+    background-color: rgb(198, 210, 30);
+    color: black;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;" >Bg Changer </h1>
+<div style="background-color: chocolate; padding: 20px; border: 5px solid black; border-radius: 10px; ">
+    <button id="red" >red</button>
+    <button id="blue">blue</button>
+    <button id="green">green</button>
+    <button id="yellow">yellow</button>
+    <button id="pink">pink</button>
+    <button id="powderblue">Reset</button>
+  
+</div>
+
+
+<script>
+    const btncolor =document.querySelectorAll('button');
+    let body= document.querySelector('body');
+    let h1= document.querySelector('h1');
+    btncolor.forEach((i)=>{
+  i.addEventListener('click',function () {
+    if(i.id=='blue' || i.id=='green'){
+         h1.style.color="black";
+    }
+     else{
+        h1.style.color="blue";
+
+    }
+     console.log(i.id);
+     document.body.style.backgroundColor=i.id;
+
+  })
+    })
+
+</script>
+
+</body>
+</html>
+
